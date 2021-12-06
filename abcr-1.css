@@ -1,0 +1,578 @@
+<!--[if lt IE 7]>
+<style type="text/css">
+#main{
+	width: 770px;
+	width: expression
+	(document.body.clientWidth <= 602? "600px" : document.body.clientWidth >= 1002? "1000px" : "auto");
+}
+</style>
+<![endif]-->	
+
+/*GENERALITES*/
+body{
+	width: 100%;
+	font-family: verdana, arial, sans-serif;
+}
+h1{
+	text-align: center;
+	font-size: 35px;
+	margin-bottom: 1%;
+	font-family: verdana, arial, sans-serif;
+}
+p{
+	font-size: 18px;
+}
+ul{
+	font-size: 18px;
+	list-style: circle;
+}
+h2{
+	font-size: 30px;
+}
+.list{
+	list-style: none;
+}
+
+/*MAIN*/
+#main{
+	font-family: verdana, arial, sans-serif;
+}
+.para{
+	margin: 1% 3% 0% 95%
+}
+img{
+	text-align: center;
+	margin-left: 40%;
+	margin-right: 40%;
+	margin-top: 5%;
+	height: 230px;
+}
+.text h2{
+	font-size: 50px
+	color: rgb(211, 162, 10);
+	font-family: verdana, arial, sans-serif;
+}
+.text{
+	font-family: verdana, arialsans-serif;
+	font-weight: normal;
+	margin-bottom: 4%;
+}
+.ident{
+	text-align: center;
+	font-size: 23px;
+	color: #444;
+	margin-top: 1%;
+}
+.color1{
+	color: rgb(250, 220, 14);
+}
+.present p{
+	text-align: center;
+	color: #444;
+	font-size: 16px;
+	margin-left: 185px;
+	margin-right: 185px;
+}
+.color2{
+	color: rgb(210, 4, 4);
+}
+.abc{
+	font-weight: bold;
+	font-size: 20px;
+}
+
+/*BUT*/
+.but{
+	background-color: #efefef;
+	padding: 30px;
+}
+.but p{
+	font-size: 30px;
+	text-align: center;
+	font-family: verdana, arial, sans-serif;
+	color: rgb(50, 50, 50);
+	text-transform: uppercase;
+	font-weight: bold;
+	border-bottom: 3px solid rgb(250, 220, 14);
+	padding: 15px;
+	margin: 0 37% 0 37%;
+}
+.but ul li{
+	font-size: 17px;
+	font-family: verdana, arial, sans-serif;
+	font-weight: normal;
+	color: rgb(50, 50, 50);
+	margin-bottom: 8px;
+}
+.container{
+	background-color: #fff;
+	padding: 20px;
+}
+
+/*DOMAINE*/
+.domaine{
+	text-align: center;
+	margin-top: 50px;
+	font-family: verdana, arial, sans-serif;	
+}
+.domaine h2{
+	font-size: 25px;
+	color: #444;
+	text-transform: uppercase;
+	border-bottom: 3px solid rgb(250, 220, 14);
+	margin: 0 36% 0 36%;
+	padding: 10px;
+}
+.domaine li{
+	list-style: none;
+	float: left;
+	margin-left: 70px;
+	margin-top: 2%;
+	font-size: 19px;
+	color: #444;
+	text-align: center;
+}
+.domaine ul{
+	margin: 1% 26% 0% 26%;
+	padding-bottom: 20px;
+} 
+
+
+/*WRAPPER*/
+#exposition{
+	width:100%; 
+	height:570px; 
+	margin-top: 70px; 
+	background-color:#efefef;
+	}
+.groupe{
+	display:flex; 
+	flex-direction:row; 
+	align-items:center;	
+}
+.wep{
+	height:380px; 
+	width:22%;  
+	border-radius:10px; 
+	background-color:white;
+	float: left;
+	margin-top: 98px;
+	margin-left:2.3%;
+	background-color: white;
+}
+.wep h2{
+	text-align: center;
+	font-size: 17px;
+	font-family: verdana, tahoma, arial, sans-serif;
+	font-weight: bold;
+	margin: 15px;
+	margin-top: 27%;
+	margin-bottom: 5px;
+}
+.wep p{
+	text-align: center;
+	font-family: verdana, tahoma, arial, sans-serif;
+	font-size: 14px;
+	padding: 10px;
+}
+.button1{
+	color: #fff;
+	background: rgb(250, 220, 14);
+	font-size: 0px;
+	font-weight: bold;
+	padding: 8px;
+	border-style: none;
+	border-radius: 3px;
+	width: 35%;
+	margin-bottom: 20px;
+	margin-left: 29%;
+}
+.button1:hover{
+	color:#fff;
+	background-color: #02b8dd;
+}
+
+/*JS READ GENERALITIES*/
+#read{
+	width:100%; 
+	height:550px; 
+	margin-top:45px;  
+	align-items:center;
+	background-color:#efefef;
+	font-family: verdana;
+	font-weight: normal;
+	}
+#read h2{
+	font-weight: normal;
+	font-size: 50px;
+	text-align: center;
+	margin: 2% 29% 0% 29%;
+	color: rgb(26, 26, 26);
+}
+#read p{
+	font-weight: normal;
+	font-size: 25px;
+	text-align: center;
+	color: rgb(26, 26, 26);
+}
+#read li{
+	font-weight: normal;
+	font-size: 18px;
+	margin-left: 120px;
+	margin-bottom: 20px;
+	color: rgb(26, 26, 26);
+}
+#read .write{
+	background-color: white;
+	position: absolute;
+	margin-left: 2.4%;
+	margin-top: 25px;
+	width: 94%;
+	height: 520px;
+}
+.photo{
+	background: #02b8dd;
+	border-radius: 5px;
+	width: 3%;
+	padding: 5px;
+	margin-left: 3%;
+	margin-top: 15px;
+}
+.photo:hover{
+	background: #444;
+}
+.photo img{
+	height: 20px;
+	margin: 5px 7px 0px 7px;
+}
+#read .conseil{
+	margin-right: 50px;
+}
+#es{
+	width:100%; 
+	height:550px; 
+	margin-top:18px;  
+	background-color:#efefef;
+	align-items:center;
+	font-family: verdana;
+	font-weight: normal;
+}
+.e{
+	background-color: white;
+	margin-top: 18px;
+	position: absolute;
+	margin-left: 2.35%;
+	width: 94%;
+	height: 510px;
+	padding-top: 25px;
+}
+#es h2{
+	font-weight: normal;
+	font-size: 40px;
+	text-align: center;
+	margin-top: 77px;
+	color: rgb(26, 26, 26);
+	border-bottom: 3px solid rgb(250, 220, 14);
+	margin: 0% 33% 0% 33%;
+	padding: 10px;
+}
+#es li{
+	font-weight: normal;
+	font-size: 18px;
+	margin-left: 120px;
+	margin-bottom: 9px;
+	color: rgb(26, 26, 26);
+}
+#et{
+	width:100%; 
+	height:700px; 
+	margin-top: 90px;  
+	background-color:#efefef;
+	font-family: verdana;
+	font-weight: normal;
+	}
+.ea{
+	background-color: white;
+	position: absolute;	
+	margin-left: 1.6%;
+	margin-top: 73px;
+	width: 94%;
+	height: 510px;
+	padding: 10px;
+	padding-bottom: 35px;
+}
+.ea span{
+	font-weight: bold;
+	font-size: 22px;
+	color: rgb(250, 220, 14);
+	margin-left: 5%;
+}
+.ea p{
+	font-size: 18px;
+}
+#et li{
+	font-weight: normal;
+	font-size: 17px;
+	margin-left: 120px;
+	margin-bottom: 9px;
+	color: rgb(26, 26, 26);
+	list-style: circle;
+}
+#et .ea .list{
+	list-style: none;
+}
+.cond{
+	border-bottom: 3px solid rgb(250, 220, 14);
+	margin: 0px 300px 0px 300px;
+	padding-bottom: 10px;
+}
+
+/*CONTACT*/
+#contact{
+	text-align: center;
+	font-family: verdana, tahoma, arial, sans-serif;
+	margin: 25px;
+}
+.yellow{
+	margin-top: 100px;
+	color: rgb(250, 220, 14);
+}
+.gry{
+	color: rgb(130, 130, 130);
+	margin-top: 10px;
+	font-weight: normal;
+}
+#contact h3{
+	text-transform: uppercase;
+	color: rgb(49, 49, 46);
+	font-size: 25px;
+	margin-bottom: 5px;
+}
+form{
+	margin: 30px 0px 30px 0;
+	text-align: center;
+}
+input[type="text"]{
+	padding: 10px;
+	font-size: 18px;
+	margin-right: 1%;
+	margin-bottom: 1%;
+	border: 2px solid #ddd;
+	border-radius: 3px;
+	width: 35%;
+}
+textarea{
+	display: block;
+	padding: 10px;
+	font-size: 18px;
+	margin-bottom: 20px;
+	border: 2px solid #ddd;
+	border-radius: 3px;
+	width: 35%;
+	margin-left: 12.2%;
+	font-family: verdana, arial;
+}
+.button{
+	color: #fff;
+	background: rgb(250, 220, 14);
+	font-size: 17px;
+	font-weight: bold;
+	padding: 8px;
+	border-style: none;
+	border-radius: 3px;
+	width: 35%;
+	margin-bottom: 30px;
+}
+.button:hover{
+	color:#fff;
+	background-color: #02b8dd;
+}
+.infos{
+	text-align: justify;
+	margin-bottom: 70px;
+	margin-left: 2%;
+}
+.infos p{
+	font-size: 15px;
+	margin: 3px;
+}
+
+/*FOOTER*/
+footer{
+	background-color: rgb(29, 29, 29);
+	font-family: verdana, arial;
+	padding: 20px; 
+	height: 150px;
+}
+.copyright{
+	color: #777;
+}
+footer h2{
+	color: rgb(130, 130, 130);
+	text-align: center;
+	margin-bottom: 15px;
+}
+footer img{
+	height: 50px;
+	margin-left: 1%;
+}
+footer li{
+	float: left;
+	margin-right: 10%;
+	list-style: none;
+}
+.flayers{
+	margin-left: 39.5%;
+}
+
+/*MISE A JOUR JS*/
+#formu{
+	background-color: #fff;
+	font-family: verdana, arial;
+	color: #444;
+	text-align: justify;
+}
+#formu h3{
+	text-align: center;
+	font-size: 30px;
+}
+#box{
+	display: block;
+	background-color: #efefef;
+	margin-left: 12.1%;
+	padding: 10px;
+	font-size: 18px;
+}
+#texta{
+	background-color: #efefef;
+	display: block;
+	padding: 10px;
+	font-size: 18px;
+	margin-bottom: 20px;
+	border: 2px solid #ddd;
+	border-radius: 3px;
+	width: 35%;
+	margin-left: 12.2%;
+	font-family: verdana, arial;
+}
+form{
+	margin: auto;
+}
+
+@media screen and (max-width:770px) and (min-width: 500px){
+	body{width: 100%; margin: 0px; padding: 0px;}
+	#main{margin-bottom: 35px; padding: 8px;}
+	.para{position: inherit; margin: 1% 3% 0% 88%;}
+	.logoABC img{height: 180px; margin: 5% 36.5% 0% 36.5%;}
+	#main h1{font-size: 20px; margin-top: 10px;}
+	#main .ident{font-size: 14px; margin-bottom: 8px;}
+	.present .text p{font-size: 13px; margin: 12px 7px 20px 7px;}
+	.present .text span{font-size: 14px;}
+	.but{padding: 15px;}
+	.container{padding: 10px;}
+	.container p{font-size: 18px; margin: 0% 31% 0% 31%; padding-bottom: 8px; text-align: center;}
+	.container ul li{font-size: 15px;}
+	.domaine{margin-top: 18px; height: 70px;}
+	.domaine h2{font-size: 18px; margin: 0% 25% 0% 25%; padding-bottom: 8px;}
+	.domaine ul{margin: 0px; padding: 0px;}
+	.domaine ul li{font-size: 15px; float: none; margin: 0px; margin-top: 10px; padding: 0px;}
+	#exposition{margin-top: 60px; padding: 0px; height: 400px;}
+	#exposition .wep{margin-left: 2.3%; margin-top: 50px; width: 22%; height: 300px;}
+	#exposition .wep h2{font-size: 12px; font-weight: bold;}
+	#exposition .wep p{font-size: 12px;} 
+	#exposition .button1{font-size: 14px; padding: 3px;}
+	.photo{padding: 3px; width: 5%}
+	.photo img{height: 10px; margin: 0px; margin-left: 4px; margin-bottom: 2px;}
+	#read{height: 200px;}
+	#read .write{margin: 5.5% 0% 0% 3.5%;}
+	#read .write h2{font-size: 17px; margin: 0%}
+	#read .write ul{margin: 5% 0% 0% 0%;}
+	#read .write li{font-size: 12px; margin: 0px; margin-bottom: 2%; margin-left: 20px;}
+	#read .conseil{margin-left: 50px}
+	#es{height: 150px;}
+	#es .e{margin: 5.5% 0% 0% 3.5%;}
+	#es .e h2{font-size: 19px; margin: 0%;}
+	#es .e ul{margin: 5% 0% 0% 0%;}
+	#es .e li{font-size: 14px; margin: 0px; margin-bottom: 2%; margin-left: 20px;}
+	#es .e .media{display: inline;}
+	#et{height: 150px;}
+	#et .ea{margin: 5.5% 0% 0% 3.5%;}
+	#et .ea p{font-size: 19px; margin: 2% 0% 3% 0%;}
+	#et .ea span{font-size: 19px;}
+	#et .ea ul{margin: 5% 0% 0% 0%;}
+	#et .ea li{font-size: 14px; margin: 0px; margin-bottom: 2%; margin-left: 20px;}
+
+	#contact form{text-align: center; margin: 0px; margin-right: 10%}
+	#contact input[type="text"]{font-size: 14px; display: inline; float: right; width: 40%; padding: 8px; margin-bottom: 10px;}
+	#contact textarea{font-size: 14px; width: 40%; padding: 8px; margin: 0px; margin-bottom: 20px; margin-left: 10%}
+	#contact .button{font-size: 14px; padding: 8px; width: 80px;}
+	#contact .yellow{font-size: 14px;}
+	#contact h3{font-size: 16px;}
+	#contact .gry{font-size: 14px;}
+	#contact .infos p{font-size: 13px;}
+	footer{padding: 15px; height: 120px;}
+	footer h2{font-size: 20px; margin-top: 15px;}
+	footer ul li{margin-right: 20%}
+	footer img{height: 40px;}
+	footer .flayers{margin: 0%; margin-left: 28%;}
+
+}
+
+@media screen and (max-width:500px){
+	body{width: 100%; margin: 0px; padding: 0px;}
+	#main{margin-bottom: 35px; padding: 8px;}
+	.para{position: inherit; margin: 1% 3% 0% 86%;}
+	.logoABC img{height: 140px; margin: 5% 27% 0% 27%;}
+	#main h1{font-size: 18px; margin-top: 8px;}
+	#main .ident{font-size: 13px; margin-bottom: 5px;}
+	.present .text p{font-size: 12px; margin: 12px 7px 20px 7px;}
+	.present .text span{font-size: 13px;}
+	.but{padding: 15px;}
+	.container{padding: 5px;}
+	.container p{font-size: 15px; margin: 0% 28% 0% 28%; padding-bottom: 5px; text-align: center;}
+	.container ul li{font-size: 13px;}
+	.domaine{margin-top: 18px; height: 70px;}
+	.domaine h2{font-size: 15px; margin: 0% 21% 0% 21%; padding-bottom: 5px;}
+	.domaine ul{margin: 0px; padding: 0px;}
+	.domaine ul li{font-size: 13px; float: none; margin: 0px; margin-top: 10px; padding: 0px;}
+	#exposition{margin-top: 40px; padding: 0px; display: inherit; flex-direction: inherit; height: 510px;}
+	#exposition .group{display: flex; flex-direction: row; float: none; width: 100%;}
+	#exposition .wep{margin-left: 6.5%; margin-top: 23px; width: 40%; height: 220px;}
+	#exposition .wep h2{font-size: 14px;}
+	#exposition .wep p{font-size: 11px;} 
+	#exposition .button1{font-size: 14px; padding: 3px;}
+	.photo{padding: 3px; width: 5%}
+	.photo img{height: 10px; margin: 0px; margin-left: 4px; margin-bottom: 2px;}
+	#read{}
+	#read .write{margin: 4% 0% 0% 3%;}
+	#read .write h2{font-size: 17px; margin: 0%}
+	#read .write ul{margin: 5% 0% 0% 0%;}
+	#read .write li{font-size: 12px; margin: 0px; margin-bottom: 2%; margin-left: 0px;}
+	#read .conseil{margin-left: 50px}
+	#es{}
+	#es .e{margin: 1.8% 0% 0% 3%;}
+	#es .e h2{font-size: 17px; margin: 0%;}
+	#es .e ul{margin: 5% 0% 0% 0%;}
+	#es .e li{font-size: 12px; margin: 0px; margin-bottom: 2%; margin-left: 15px;}
+	#es .e .media{display: inline;}
+	#et{}
+	#et .ea{margin: 0% 0% 0% 0%;}
+	#et .ea p{font-size: 15px; margin: 2% 0% 3% 0%;}
+	#et .ea span{font-size: 15px; margin: 0%}
+	#et .ea ul{margin: 5% 0% 0% 0%;}
+	#et .ea li{font-size: 12px; margin: 0px; margin-bottom: 2%; margin-left: 0px;}
+
+	#contact form{text-align: none; margin: 0px; margin-left: 10px;}
+	#contact input[type="text"]{font-size: 12px; display: block; width: 80%; padding: 5px; margin-bottom: 8px;}
+	#contact textarea{font-size: 12px; width: 80%; padding: 5px; margin: 0px; margin-bottom: 20px;}
+	#contact .button{font-size: 12px; padding: 5px; width: 80px;}
+	#contact .yellow{font-size: 12px;}
+	#contact h3{font-size: 14px;}
+	#contact .gry{font-size: 12px;}
+	#contact .infos p{font-size: 12px;}
+	footer{padding: 10px; height: 110px;}
+	footer h2{font-size: 17px; margin-top: 10px;}
+	footer ul li{margin-right: 20%}
+	footer img{height: 30px;}
+	footer .flayers{margin: 0%; margin-left: 20%;}
+}
